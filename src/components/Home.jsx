@@ -1313,7 +1313,7 @@ export default function Home() {
             <img
               src={insightsDIGI}
               alt="logo"
-              className="mx-auto w-full max-w-45 h-auto object-contain md:mx-0 md:max-w-none md:w-[30%]"
+              className="mx-auto w-full max-w-45 h-auto object-contain md:mx-0 md:max-w-none md:w-full"
             />
             <div className="case-content flex flex-col justify-evenly h-full text-center text-white md:text-left">
               <div className="text-sky-400 text-xs uppercase tracking-[0.22em]">
