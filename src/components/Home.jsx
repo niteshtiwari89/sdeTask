@@ -66,28 +66,28 @@ export default function Home() {
     <div className="min-h-screen hero-bg text-white overflow-hidden font-archivo">
       <Navbar />
 
-      <main className="container mx-auto bg-transparent px-8 flex flex-col md:flex-row items-center gap-12 mt-12">
-        <section className="md:w-1/2">
-          <h1 className="text-5xl font-medium md:text-6xl lg:text-7xl leading-tight max-w-xl font-archivo ">
+      <main className="w-full mx-auto mt-10 flex flex-col items-center gap-8 bg-transparent px-4 sm:gap-10 sm:px-6 md:mt-12 md:flex-row md:items-start lg:gap-12 lg:px-8">
+        <section className="w-full md:w-1/2 text-center md:text-left">
+          <h1 className="mx-auto max-w-lg text-4xl font-medium leading-tight font-archivo sm:text-5xl md:mx-0 md:text-6xl lg:max-w-xl lg:text-7xl">
             The new foundation of modern banking
           </h1>
-          <p className="mt-6 text-slate-300 max-w-lg font-archivo">
+          <p className="mx-auto mt-6 max-w-lg text-slate-300 font-archivo md:mx-0">
             We drive innovation and growth, provide seamless customer experience
             and operational excellence
           </p>
 
-          <div className="mt-8 w-1/2  flex items-center gap-4">
-            <button className="bg-linear-to-r from-[#1ea0ff] w-1/2 font-archivo to-[#0066ff] px-6 py-3 rounded-md text-sm font-normal shadow-lg">
+          <div className="mt-8 flex w-full flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
+            <button className="bg-linear-to-r from-[#1ea0ff] w-full sm:w-auto sm:flex-1 font-archivo to-[#0066ff] px-6 py-3 rounded-md text-sm font-normal shadow-lg">
               REQUEST DEMO
             </button>
-            <button className="px-6 py-3 rounded-md border w-1/2 border-slate-400 text-sm font-normal font-archivo">
+            <button className="w-full sm:w-auto sm:flex-1 px-6 py-3 rounded-md border border-slate-400 text-sm font-normal font-archivo">
               CONTACT US
             </button>
           </div>
 
-          <div className="mt-14 text-slate-400 text-sm">
+          <div className="mt-14 text-center text-slate-400 text-sm md:text-left">
             <div className="mb-3">Trusted By:</div>
-            <div className="flex gap-6 items-center opacity-70">
+            <div className="flex flex-wrap justify-center md:justify-start gap-4 sm:gap-6 items-center opacity-70">
               <div className="flex items-center gap-2">
                 <img src={shells} alt="Shells" className="h-5" />
                 {/* <span className="text-xs text-[#586E84]">SHELLS</span> */}
@@ -116,10 +116,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="md:w-1/2 relative flex justify-center py-6 md:py-0">
+        <section className="relative flex w-full justify-center py-4 md:w-1/2 md:py-0">
           <div className="eclipse absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
 
-          <div className="relative z-10 w-107.5 h-95 image-frame max-w-full shadow-2xl shadow-black/50">
+          <div className="relative z-10 w-full max-w-[320px] aspect-430/380 image-frame shadow-2xl shadow-black/50 sm:max-w-97.5 md:max-w-107.5 md:w-full md:h-auto lg:w-107.5 lg:h-95">
             <div className="absolute inset-0 overflow-hidden rounded-[30px] image-frame bg-transparent">
               <img
                 src={hero}
@@ -128,7 +128,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="absolute -left-48 bottom-8  floating-card floating-card--muted text-black rounded-[18px] p-4  shadow-2xl">
+            <div className="absolute hidden -left-24 bottom-4 w-72 floating-card floating-card--muted text-black rounded-[18px] p-4 shadow-2xl lg:block xl:-left-44 xl:bottom-8">
               <div className="flex items-center justify-between">
                 <div className="text-[18px] font-semibold text-[#171717]">
                   Recent activity
@@ -170,7 +170,124 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="absolute right-0 top-8 z-20 bank-card text-black rounded-3xl p-4 w-66.25 shadow-2xl">
+
+          <div className="mt-6 grid w-full max-w-[430px] gap-4 lg:hidden">
+            <div className="bank-card w-full rounded-3xl p-4 text-black shadow-2xl">
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 overflow-hidden rounded-[14px] shadow-inner">
+                    <img
+                      src={konstrastr}
+                      alt="avatar"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <div className="text-[11px] leading-none font-semibold">
+                      Toni Kross
+                    </div>
+                    <div className="mt-1 text-[9px] text-[#6f6f6f]">
+                      Good Morning
+                    </div>
+                  </div>
+                </div>
+                <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-[#e8e8e8] text-[18px] text-[#111]">
+                  ◔
+                </div>
+              </div>
+
+              <div className="mt-4">
+                <div className="text-[10px] text-[#8d8d8d]">Total balance</div>
+                <div className="mt-2 text-[22px] leading-none font-semibold tracking-tight text-[#17398b]">
+                  $42,295.00 USD
+                </div>
+              </div>
+
+              <div className="my-4 h-px w-full bg-white/60"></div>
+
+              <div className="grid grid-cols-3 gap-3">
+                <div className="flex flex-col items-center gap-2">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-[18px] bg-[#efefef] text-xl text-[#111]">
+                    <img
+                      src={transferMoney}
+                      alt="icon"
+                      className="h-6 w-6 object-contain"
+                    />
+                  </div>
+                  <div className="text-center text-[9px] font-semibold leading-tight">
+                    Fund Transfer
+                  </div>
+                </div>
+                <div className="flex flex-col items-center gap-2">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-[18px] bg-[#ececf0] text-xl text-[#111]">
+                    <img
+                      src={addMoney}
+                      alt="icon"
+                      className="h-6 w-6 object-contain"
+                    />
+                  </div>
+                  <div className="text-center text-[9px] font-semibold leading-tight">
+                    Add Money
+                  </div>
+                </div>
+                <div className="flex flex-col items-center gap-2">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-[18px] bg-[#efefef] text-xl text-[#111]">
+                    <img
+                      src={moreOption}
+                      alt="icon"
+                      className="h-6 w-6 object-contain"
+                    />
+                  </div>
+                  <div className="text-center text-[9px] font-semibold leading-tight">
+                    More
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="floating-card floating-card--muted w-full rounded-[18px] p-4 text-black shadow-2xl">
+              <div className="flex items-center justify-between">
+                <div className="text-[18px] font-semibold text-[#171717]">
+                  Recent activity
+                </div>
+              </div>
+
+              <div className="mt-4 flex flex-wrap gap-2 text-[10px] font-medium text-[#4b4b4b]">
+                <span className="rounded-full bg-white px-3 py-1 shadow-sm">
+                  This Day
+                </span>
+                <span className="rounded-full bg-[#183b8c] px-3 py-1 text-white shadow-sm">
+                  This Week
+                </span>
+                <span className="rounded-full bg-white px-3 py-1 shadow-sm">
+                  This Month
+                </span>
+                <span className="rounded-full bg-white px-3 py-1 shadow-sm">
+                  6 Month
+                </span>
+              </div>
+
+              <div className="mt-4 flex items-center justify-between rounded-[14px] bg-white/80 px-4 py-4">
+                <div className="flex items-center gap-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#8d72ff] text-white">
+                    <ArrowUpRight className="h-6 w-6 object-contain" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-bold text-[#222]">
+                      To Jin{" "}
+                      <span className="font-normal text-[#6f6f6f]">· Work</span>
+                    </div>
+                    <div className="mt-1 text-sm text-[#8b8b8b]">
+                      12 jun 2022
+                    </div>
+                  </div>
+                </div>
+                <div className="text-xl font-extrabold text-[#111]">-$59</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="absolute right-0 top-8 z-20 hidden w-full max-w-66.25 bank-card text-black rounded-3xl p-4 shadow-2xl lg:block lg:w-66.25">
             <div className="flex items-start justify-between gap-4">
               <div className="flex items-center gap-3">
                 <div className="h-10 w-10 rounded-[14px] shadow-inner overflow-hidden">
@@ -245,10 +362,10 @@ export default function Home() {
         </section>
       </main>
 
-      <section className="container mx-auto px-8 pb-20 pt-24">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 pb-20 pt-16 md:pt-20 lg:pt-24">
         <div className="grid gap-14 lg:grid-cols-[0.95fr_1.45fr]">
           <div className="w-full">
-            <h2 className="font-archivo text-xl leading-xl font-light tracking-tight text-white md:text-[3.4rem]">
+            <h2 className="font-archivo text-xl leading-xl font-light tracking-tight text-white text-[3.4rem]">
               All of our solutions are tailor-made to your needs
             </h2>
 
@@ -257,7 +374,7 @@ export default function Home() {
             </button>
           </div>
 
-          <div className="grid gap-x-14 gap-y-10 sm:grid-cols-2">
+          <div className="grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:gap-x-14 lg:gap-y-10">
             {solutions.map(({ image, title, description, label }) => (
               <article
                 key={title}
@@ -413,7 +530,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto px-8 pb-20">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 pb-20">
         <div className="grid gap-12 lg:grid-cols-2 items-center">
           <div className="relative mx-auto w-full max-w-2xl">
             <div className="cb7-screen relative overflow-hidden rounded-4xl border border-sky-400/35 bg-[#dfe3e8] p-3 shadow-[0_28px_70px_rgba(0,0,0,0.42)]">
@@ -506,14 +623,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto px-8 pb-24">
-        <div className="cb7-hero-panel relative overflow-hidden rounded-4xl border border-sky-400/10 bg-[#02161c] px-8 py-12 md:px-14 md:py-16">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+        <div className="cb7-hero-panel mx-4 md:mx-8 lg:mx-24 relative overflow-hidden rounded-4xl border border-sky-400/10 bg-[#02161c] px-6 py-10 md:px-14 md:py-16">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_left_top,rgba(0,180,253,0.18),transparent_38%),radial-gradient(circle_at_right_bottom,rgba(0,58,206,0.16),transparent_34%)]" />
           <div className="pointer-events-none absolute inset-0 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),inset_0_0_80px_rgba(0,0,0,0.45)]" />
 
-          <div className="relative grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div className="relative grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
             <div className="w-full">
-              <h2 className="font-archivo text-[2.35rem] font-light leading-[1.06] tracking-tight text-white md:text-[3.3rem] lg:text-[3.7rem]">
+              <h2 className="font-archivo text-[2rem] font-light leading-[1.06] tracking-tight text-white sm:text-[2.35rem] md:text-[3.3rem] lg:text-[3.7rem]">
                 Take the full advantage of going paper-less now.
               </h2>
 
@@ -524,9 +641,9 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="relative min-h-68 lg:min-h-88">
+            <div className="relative min-h-56 sm:min-h-68 lg:min-h-88">
               {/* <div className="pointer-events-none absolute inset-y-4 left-1/2 hidden w-px -translate-x-1/2 bg-linear-to-b from-sky-400/0 via-sky-400/30 to-sky-400/0 lg:block" /> */}
-              <div className="pointer-events-none absolute inset-0 opacity-35">
+              <div className="pointer-events-none absolute inset-0 hidden opacity-35 sm:block">
                 <svg
                   className="cb7-wordmark absolute -left-100 -top-40 select-none overflow-visible"
                   width="1400"
@@ -623,8 +740,8 @@ export default function Home() {
                 </svg>
               </div>
 
-              <div className="relative z-10 flex min-h-68 h-full w-full items-center justify-center lg:min-h-88">
-                <div className="flex flex-wrap items-center justify-center gap-4">
+              <div className="relative z-10 flex min-h-56 h-full w-full items-center justify-center lg:min-h-88">
+                <div className="flex w-full flex-col items-stretch justify-center gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-4">
                   <button className="rounded-lg border border-white/55 px-8 py-3 font-chivo text-[0.7rem] font-medium tracking-[0.28em] text-white/90 transition-colors hover:bg-white/5">
                     CONTACT US
                   </button>
@@ -673,7 +790,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#eaf4fb] pt-10 pb-10 text-[#101820]  md:pt-14">
+      <section className="bg-[#eaf4fb] px-6 md:px-0 pt-10 pb-10 text-[#101820]  md:pt-14">
         <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[2.25rem] bg-[#eaf4fb] py-10 lg:py-14">
           <div className="pointer-events-none absolute left-1/2 top-60 -translate-x-1/2 -translate-y-1/2">
             {" "}
@@ -1008,7 +1125,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="cb7-hero-panel mx-24  relative overflow-hidden rounded-4xl border border-sky-400/10 bg-[#02161c] px-8 py-12 md:px-14 md:py-16">
+        <div className="cb7-hero-panel md:mx-20 relative overflow-hidden rounded-4xl border border-sky-400/10 bg-[#02161c] px-8 py-12 md:px-14 md:py-16">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_left_top,rgba(0,180,253,0.18),transparent_38%),radial-gradient(circle_at_right_bottom,rgba(0,58,206,0.16),transparent_34%)]" />
           <div className="pointer-events-none absolute inset-0 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),inset_0_0_80px_rgba(0,0,0,0.45)]" />
 
@@ -1107,9 +1224,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full px-8 mt-20 pb-20">
+      <section id="insights" className="w-full px-4 sm:px-6 lg:px-8 mt-20 pb-20">
         <div className="grid gap-8 lg:grid-cols-2 items-start">
-          <div className="max-w-md text-white">
+          <div className="max-w-md text-center text-white lg:text-left">
             <h2 className="font-archivo text-3xl md:text-4xl font-normal leading-tight">
               Get yourself up-to-speed on all the things happening in fintech
             </h2>
@@ -1121,7 +1238,7 @@ export default function Home() {
 
           <div className="grid gap-6">
             <article className="insights-card insights-card--large p-6 rounded-2xl">
-              <div className="grid items-center grid-cols-2  gap-6">
+              <div className="grid items-center grid-cols-1 gap-6 md:grid-cols-2">
                 <div className="w-full rounded-lg bg-[#061525] p-3 overflow-hidden flex items-center justify-center">
                   <img
                     src={insightsDIGI}
@@ -1138,9 +1255,9 @@ export default function Home() {
                     How to transition from a traditional to a digital bank
                   </h3>
 
-                  <div className="mt-4 flex items-center gap-4 text-sm text-[#64A8C4]">
+                  <div className="mt-4 flex items-center justify-center gap-4 text-sm text-[#64A8C4] md:justify-start">
                     <div>David Grohl</div>
-                    <div className="px-2 py-[2px] text-[11px] ">17/08/24</div>
+                    <div className="px-2 py-0.5 text-[11px]">17/08/24</div>
                   </div>
 
                   <div className="mt-6">
@@ -1152,7 +1269,7 @@ export default function Home() {
               </div>
             </article>
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               {[1, 2].map((n) => (
                 <article
                   key={n}
@@ -1178,40 +1295,40 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="text-right">
-              <a className="text-sky-400 font-chivo text-sm font-semibold">
+            <div className="text-center lg:text-right">
+              <button type="button" className="text-sky-400 font-chivo text-sm font-semibold">
                 READ ALL INSIGHTS →
-              </a>
+              </button>
             </div>
           </div>
         </div>
       </section>
-      <section className="container mx-auto px-8 pb-20">
-        <h2 className="text-center font-archivo text-[2.6rem] font-medium text-white mb-8">
+      <section id="case-studies" className="container mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        <h2 className="text-center font-archivo text-[2rem] sm:text-[2.4rem] lg:text-[2.6rem] font-medium text-white mb-8">
           Our Case Studies
         </h2>
 
-        <div className="case-studies-inner relative flex items-center justify-center">
-          <div className="case-card grid grid-cols-2 w-full max-w-4xl items-center gap-12 p-10 rounded-2xl">
+        <div className="case-studies-inner relative flex flex-col md:flex-row items-center justify-center">
+          <div className="case-card grid w-full max-w-4xl grid-cols-1 items-center gap-6 rounded-2xl p-5 sm:p-8 md:grid-cols-[0.7fr_1.3fr] md:gap-10 lg:gap-12 lg:p-10">
             <img
               src={insightsDIGI}
               alt="logo"
-              className="w-full col-span-1 h-auto object-contain"
+              className="mx-auto w-full max-w-45 h-auto object-contain md:mx-0 md:max-w-none md:w-[30%]"
             />
-            <div className="case-content flex flex-col justify-evenly h-full  text-white">
+            <div className="case-content flex flex-col justify-evenly h-full text-center text-white md:text-left">
               <div className="text-sky-400 text-xs uppercase tracking-[0.22em]">
                 Getting started
               </div>
 
-              <h3 className="mt-3 text-3xl font-archivo font-semibold leading-tight">
+              <h3 className="mt-3 text-2xl sm:text-3xl font-archivo font-semibold leading-tight">
                 How we help brand reach out to more people
               </h3>
 
-              <div className="mt-5 flex items-center gap-3 text-slate-300">
+              <div className="mt-5 flex items-center justify-center gap-3 text-slate-300 md:justify-start">
                 <img
                   src={zoomerr}
                   alt="brand"
-                  className=" w-20 rounded-full"
+                  className="w-20 rounded-full"
                 />
                 {/* <span className="font-medium">Zoomerr</span> */}
               </div>
@@ -1222,7 +1339,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="carousel-controls absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-6">
+          <div className="carousel-controls mt-6 flex items-center justify-center gap-6 md:absolute md:bottom-2 md:left-1/2 md:-translate-x-1/2 md:mt-0">
             <button
               aria-label="Previous"
               className="nav-arrow border border-sky-400/30 text-sky-300 rounded-full h-10 w-10 flex items-center justify-center hover:bg-white/5 transition"
@@ -1244,17 +1361,17 @@ export default function Home() {
             </button>
           </div>
 
-          <a
-            href="#"
-            className="view-all absolute right-6 font-chivo bottom-6 text-sky-400 text-sm"
+          <button
+            type="button"
+            className="view-all mt-4 block text-center font-chivo text-sky-400 text-sm md:mt-0 md:absolute md:right-6 md:bottom-6 md:text-right"
           >
             VIEW ALL →
-          </a>
+          </button>
         </div>
       </section>
 
-      <section className="container mx-auto px-8 pb-24">
-        <div className=" relative overflow-hidden px-8 py-12 md:px-14 md:py-16">
+      <section className="container mx-auto px-4 sm:px-6 pb-24">
+        <div className="relative overflow-hidden px-5 py-8 sm:px-8 sm:py-12 md:px-14 md:py-16">
           <div className="relative grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
             <div className="w-full">
               <h2 className="font-archivo text-[2.35rem] font-light leading-[1.06] tracking-tight text-white md:text-[3.3rem] lg:text-[3.7rem]">
@@ -1269,14 +1386,13 @@ export default function Home() {
             </div>
 
             <div className="relative min-h-68 lg:min-h-88">
-             
               <div className="relative z-10 flex min-h-68 h-full w-full items-center justify-center lg:min-h-88">
-                <div className="flex flex-wrap items-center justify-center gap-10">
-                  <button className="rounded-lg border border-white/55 px-8 py-3 font-chivo text-[0.7rem] font-medium tracking-[0.28em] text-white/90 transition-colors hover:bg-white/5">
+                <div className="flex w-full flex-col items-stretch justify-center gap-4 sm:w-auto sm:flex-row sm:items-center sm:gap-10">
+                  <button className="w-full rounded-lg border border-white/55 px-8 py-3 font-chivo text-[0.7rem] font-medium tracking-[0.28em] text-white/90 transition-colors hover:bg-white/5 sm:w-auto">
                     CONTACT US
                   </button>
 
-                  <button className="rounded-lg bg-linear-to-r font-chivo from-sky-500 to-blue-600 px-8 py-3 text-[0.7rem] font-medium tracking-[0.28em] text-white shadow-[0_12px_28px_rgba(8,110,255,0.28)] transition-transform hover:-translate-y-0.5">
+                  <button className="w-full rounded-lg bg-linear-to-r font-chivo from-sky-500 to-blue-600 px-8 py-3 text-[0.7rem] font-medium tracking-[0.28em] text-white shadow-[0_12px_28px_rgba(8,110,255,0.28)] transition-transform hover:-translate-y-0.5 sm:w-auto">
                     REQUEST DEMO
                   </button>
                 </div>
@@ -1286,20 +1402,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="site-footer px-8 py-20">
+      <section className="site-footer px-4 sm:px-6 lg:px-8 py-20">
         <div className="container mx-auto">
-          <div className="grid grid-cols-12 gap-8 items-start">
-            <div className="col-span-4">
+          <div className="grid grid-cols-1 gap-8 items-start md:grid-cols-12">
+            <div className="md:col-span-4">
               <svg
                 width="440"
                 height="233"
                 viewBox="0 0 440 233"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="w-full max-w-[320px] h-auto"
               >
                 <mask
                   id="mask0_40_4563"
-                  maskType="alpha"
                   maskUnits="userSpaceOnUse"
                   x="27"
                   y="0"
@@ -1347,9 +1463,9 @@ export default function Home() {
                     width="451.44"
                     height="451.44"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                   >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                       mode="normal"
                       in="SourceGraphic"
@@ -1368,9 +1484,9 @@ export default function Home() {
                     width="327.553"
                     height="327.553"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                   >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                       mode="normal"
                       in="SourceGraphic"
@@ -1386,8 +1502,8 @@ export default function Home() {
               </svg>
             </div>
 
-            <div className="col-span-8">
-              <div className="grid grid-cols-3 gap-8 mb-8 text-sm text-white/80">
+            <div className="md:col-span-8">
+              <div className="grid grid-cols-1 gap-8 mb-8 text-sm text-white/80 sm:grid-cols-2 lg:grid-cols-3">
                 <div>
                   <h4 className="text-white font-semibold mb-3">London</h4>
                   <p className="leading-relaxed">
@@ -1414,7 +1530,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-3 gap-8 text-sm text-white/70">
+              <div className="grid grid-cols-1 gap-8 text-sm text-white/70 sm:grid-cols-2 lg:grid-cols-3">
                 <div>
                   <h5 className="text-white font-medium mb-3">Solutions</h5>
                   <ul className="space-y-3">
