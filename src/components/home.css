@@ -60,7 +60,7 @@
     width: 33rem;
     height: 26rem;
     border-radius: 9999px;
-    background: radial-gradient(circle at 50% 50%,
+    background: radial-gradient(circle at 100% 100%,
         rgba(0, 110, 255, 0.00) 0%,
         rgba(0, 110, 255, 0.00) 45%,
         rgba(0, 120, 255, 0.18) 62%,

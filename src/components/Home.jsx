@@ -1,4 +1,5 @@
 import hero from "../assets/bankingHome.png";
+import hero2 from "../assets/Frame114.png";
 import "./home.css";
 import Navbar from "./Navbar";
 import konstrastr from "../assets/konstrastrIcon.png";
@@ -119,16 +120,16 @@ export default function Home() {
         <section className="relative flex w-full justify-center py-4 md:w-1/2 md:py-0">
           <div className="eclipse absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
 
-          <div className="relative z-10 w-full max-w-[320px] aspect-430/380 image-frame shadow-2xl shadow-black/50 sm:max-w-97.5 md:max-w-107.5 md:w-full md:h-auto lg:w-107.5 lg:h-95">
-            <div className="absolute inset-0 overflow-hidden rounded-[30px] image-frame bg-transparent">
+          <div className="relative z-10 w-full aspect-430/380 image-frame shadow-2xl shadow-black/50 md:w-full md:h-auto  lg:h-95">
+            <div className="absolute inset-0 overflow rounded-[30px] image-frame bg-transparent">
               <img
-                src={hero}
+                src={hero2}
                 alt="hero"
-                className="w-full h-full object-cover rounded-[30px] bg-transparent"
+                className="w-full h-full object-contain overflow-auto rounded-[30px] bg-transparent"
               />
             </div>
 
-            <div className="absolute hidden -left-24 bottom-4 w-72 floating-card floating-card--muted text-black rounded-[18px] p-4 shadow-2xl lg:block xl:-left-44 xl:bottom-8">
+            {/* <div className="absolute hidden -left-24 bottom-4 w-72 floating-card floating-card--muted text-black rounded-[18px] p-4 shadow-2xl lg:block xl:-left-44 xl:bottom-8">
               <div className="flex items-center justify-between">
                 <div className="text-[18px] font-semibold text-[#171717]">
                   Recent activity
@@ -153,7 +154,6 @@ export default function Home() {
               <div className="mt-4 flex items-center justify-between rounded-[14px] bg-white/80 px-4 py-4">
                 <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#8d72ff] text-white">
-                    {/* <icon src={ArrowUpRight} alt="activity" className="h-6 w-6 object-contain" /> */}
                     <ArrowUpRight className="h-6 w-6 object-contain" />
                   </div>
                   <div>
@@ -168,10 +168,10 @@ export default function Home() {
                 </div>
                 <div className="text-xl font-extrabold text-[#111]">-$59</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
-          <div className="mt-6 grid w-full max-w-[430px] gap-4 lg:hidden">
+          {/* <div className="mt-6 grid w-full max-w-[430px] gap-4 lg:hidden">
             <div className="bank-card w-full rounded-3xl p-4 text-black shadow-2xl">
               <div className="flex items-start justify-between gap-4">
                 <div className="flex items-center gap-3">
@@ -285,9 +285,9 @@ export default function Home() {
                 <div className="text-xl font-extrabold text-[#111]">-$59</div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="absolute right-0 top-8 z-20 hidden w-full max-w-66.25 bank-card text-black rounded-3xl p-4 shadow-2xl lg:block lg:w-66.25">
+          {/* <div className="absolute right-0 top-8 z-20 hidden w-full max-w-66.25 bank-card text-black rounded-3xl p-4 shadow-2xl lg:block lg:w-66.25">
             <div className="flex items-start justify-between gap-4">
               <div className="flex items-center gap-3">
                 <div className="h-10 w-10 rounded-[14px] shadow-inner overflow-hidden">
@@ -358,7 +358,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
       </main>
 
