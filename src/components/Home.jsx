@@ -857,7 +857,7 @@ export default function Home() {
               </defs>
             </svg>
           </div>
-          <div className="relative z-10 grid items-center gap-12 lg:grid-cols-[1fr_0.95fr_1fr] lg:gap-8">
+          <div className="relative z-10 grid items-center px-4 gap-12 lg:grid-cols-[1fr_0.95fr_1fr] lg:gap-8">
             <div className="max-w-md">
               <h2 className="font-archivo text-[2.15rem] font-light leading-[1.02] tracking-tight text-[#13202a] md:text-[3rem] lg:text-[3.45rem]">
                 Digital banking out-of-the-box
