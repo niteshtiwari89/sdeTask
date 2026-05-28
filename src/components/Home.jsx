@@ -623,7 +623,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+      <section className="w-full px-4 sm:px-6 lg:px-8 pb-24">
         <div className="cb7-hero-panel mx-4 md:mx-8 lg:mx-24 relative overflow-hidden rounded-4xl border border-sky-400/10 bg-[#02161c] px-6 py-10 md:px-14 md:py-16">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_left_top,rgba(0,180,253,0.18),transparent_38%),radial-gradient(circle_at_right_bottom,rgba(0,58,206,0.16),transparent_34%)]" />
           <div className="pointer-events-none absolute inset-0 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),inset_0_0_80px_rgba(0,0,0,0.45)]" />
@@ -1370,7 +1370,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 sm:px-6 pb-24">
+      <section className="w-full px-4 sm:px-6 pb-24">
         <div className="relative overflow-hidden px-5 py-8 sm:px-8 sm:py-12 md:px-14 md:py-16">
           <div className="relative grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
             <div className="w-full">
